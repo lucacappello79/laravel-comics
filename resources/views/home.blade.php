@@ -8,7 +8,7 @@
     <div class="row">
 
       @foreach ($comics as $item)
-        <div class="col-3 card">
+        <div class="col-2 card">
 
           <div class="card-inner">
             <img src="{{$item['thumb']}}" alt="fnf">
