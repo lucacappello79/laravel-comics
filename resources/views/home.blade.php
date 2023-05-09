@@ -7,12 +7,12 @@
   <div class="container">
     <div class="row">
 
-      @foreach ($ as $item)
+      @foreach ($comics as $item)
         <div class="col-3 card">
 
           <div class="card-inner">
-            <img src="{{$item['src']}}" alt="fnf">
-            {{$item['titolo']}}
+            <img src="{{$item['thumb']}}" alt="fnf">
+            {{$item['title']}}
           </div>
         </div>
       @endforeach
