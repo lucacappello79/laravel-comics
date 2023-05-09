@@ -53,27 +53,51 @@ main {
     //background-size: cover;
     //background-position: center;
 
-    background-color: bisque;
+    background-color: black;
 
     padding: 40px 0;
 
+    // .card {
+    //     padding: 8px;
+
+    //     color: gray;
+    //     text-transform: uppercase;
+    //     font-size: .9em;
+    //     text-align: center;
+
+    //     .card-inner {
+    //         background-color: black;
+
+    //         padding-bottom: 2em;
+
+    //         img {
+    //             width: 100%;
+    //         }
+
+    //     }
+    // }
+
+
     .card {
-        padding: 8px;
 
-        color: gray;
-        text-transform: uppercase;
-        font-size: .9em;
-        text-align: center;
+        border: 1px solid black;
+        padding: 10px;
+        font-weight: bold;
 
-        .card-inner {
-            background-color: white;
 
-            padding-bottom: 2em;
+        img {
+            height: 100%;
+        }
 
-            img {
-                width: 100%;
-            }
+        ;
 
+        .title {
+            margin-top: 10px;
+            color: grey;
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 }
