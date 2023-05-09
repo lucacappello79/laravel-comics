@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
-    return view('welcome');
-});
+Route::get('/', function () {
+
+    $comics = config('comics');
+
+    return view('home', compact('comics'));
+})->name('nome');

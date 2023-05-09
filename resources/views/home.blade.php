@@ -1,30 +1,23 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts/main-layout')
 
-    <title>Laravel</title>
+@section('content')
+<main class="comics">
 
-    <!-- Fonts -->
-    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <div class="container">
+    <div class="row">
 
-    <!-- Styles -->
-    @vite('resources/js/app.js')
+      @foreach ($ as $item)
+        <div class="col-3 card">
 
-</head>
-
-<body>
-
-    <main class="bg-light">
-        <div class="container">
-
-            ciao 
-               
+          <div class="card-inner">
+            <img src="{{$item['src']}}" alt="fnf">
+            {{$item['titolo']}}
+          </div>
         </div>
-    </main>
+      @endforeach
 
-</body>
-
-</html>
+    </div>
+  </div>
+</main>
+@endsection
