@@ -17,6 +17,7 @@
 
 <body id="homepage">
     @include('partials/header')
+    @include('partials/jumbo')
   
     @yield('content')
   
